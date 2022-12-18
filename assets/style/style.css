@@ -79,3 +79,321 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+a:nth-of-type(6) {
+  position: relative;
+  background: var(--highlight-primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 0.6s;
+  animation-iteration-count: 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0) rotate(360deg) ;
+  }
+}
+
+/*2*/
+a:nth-of-type(2) {
+  position: inline-block;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.slide {
+  animation-name: slide;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    padding: 0.4em 6em;
+  }
+}
+
+
+/*3*/
+a:nth-of-type(19) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.half {
+  animation-name: half;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes half {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  50% {
+    transform: scale(1, 1) rotateX(0) rotateY(180deg);
+  }
+
+  100% {
+    transform: scale(1, 1) rotateX(0) rotateY(360deg);
+  }
+}
+
+
+/*4*/
+a:nth-of-type(20) {
+  position: relative;
+  background: var(--highlight-primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.hang {
+  animation-name: hang;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hang {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  50%{
+    transform: scale(1, 1) translateX(2rem) translateY(2rem);
+    rotate: 90deg;
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/*5*/
+a:nth-of-type(16) {
+  position: relative;
+  background: var(--highlight-primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.weird {
+  animation-name: weird;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes weird {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-6px, 0, 0);
+    background:  var(--highlight-secondary);
+    color: var(--secondary); 
+    
+  }
+  40%,
+  60% {
+    transform: translate3d(6px, 0, 0);
+    background:  var(--highlight-secondary);
+    color: var(--secondary); 
+  }
+}
+
+
+
+
+/*LONGPRESS*/
+a:nth-of-type(4) {
+  position: relative;
+  background: var(--secondary);
+  color: var(--highlight-primary);
+  border-color: var(--highlight-primary);
+}
+
+@keyframes long_press {
+  0% 
+  { 
+    background:  var(--secondary); 
+  }
+
+  100% 
+  { 
+    background: var(--highlight-primary); color: var(--secondary); 
+  }
+}
+
+a:active {
+  animation: long_press 2s ease-in-out forwards;
+}
+
+
+
+
+/*1*/
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--secondary);
+  color: var(--highlight-primary);
+  border-color: var(--highlight-primary);
+}
+
+.around {
+  animation-name: around;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes around {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  20%{
+    transform: scale(0, 0) translateX(0rem) translateY(0rem);
+    
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+    background: var(--secondary);
+    color: var(--highlight-secondary);
+    border-color: var(--highlight-secondary);
+
+  }
+}
+
+/*1*/
+a:nth-of-type(3) {
+  position: relative;
+  background: var(--secondary);
+  color: var(--highlight-secondary);
+  border-color: var(--highlight-primary);
+}
+
+.fill {
+  animation-name: fill;
+  animation-timing-function: linear(0.28, 0.84, 0.42, 1);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fill {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  50% {
+    box-shadow: inset 100px 0 0 0 var(--highlight-primary);
+    color: var(--secondary);
+    border-color: var(--highlight-primary);
+
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+
+  }
+}
+
+a:nth-of-type(5) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.fall {
+  animation-name: fall;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fall {
+  0% {
+    transform: scale(1, 1) translateY(0rem);
+  }
+  50% {
+    transform: scale(1, 1) translateY(-50rem);
+  }
+
+  60% {
+    transform: scale(1, 1) translateX(50rem);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/*THE*/
+a:nth-of-type(7) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.squeeze {
+  animation-name: squeeze;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation: squeeze 2000ms linear alternate;
+}
+
+
+@keyframes squeeze {
+  0%   {
+    transform: translate3d(0,0,0) scale3d(1,1,1);
+  }
+
+  40%  {
+    transform: translate3d(0,-60%,0) scale3d(.7,1.5,1);
+  }
+
+  60%{
+    transform: translate3d(0, 0, 0) scale3d(1,1,1);
+  }
+
+  70%{
+    transform: translate3d(0, 0, 0) scale3d(1,.7,1);
+  }
+
+  80%{
+    transform: translate3d(0,-10%,0)
+
+  }
+
+  100% {
+    transform: translate3d(0,0,0) scale3d(1,1,1);
+  }
+}
