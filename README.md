@@ -1,6 +1,6 @@
 <h2>UI Events</h2>
 
-<strong>Beschrijving</strong>
+<strong>Beschrijving:</strong>
 <br>
 In deze opdracht was het de bedoeling om 10 buttons een andere andere animatie te geven met verschillende events in JS, om JS onder de knie te krijgen. 
 
