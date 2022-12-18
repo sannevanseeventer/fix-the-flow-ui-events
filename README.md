@@ -1,15 +1,16 @@
 > _Fork_ deze deeltaak en ga aan de slag. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<h2>UI Events</h2>
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+<strong>Beschrijving</strong>
+In deze opdracht was het de bedoeling om 10 buttons een andere andere animatie te geven met verschillende events in JS, om JS onder de knie te krijgen. 
 
-## Experimenten
-<!-- In de Experimenten beschrijf je wat je per experimnet hebt gedaan en documenteer je de code aan de hand van voorbeelden -->
-<!-- Voeg een mooie poster visual toe 📸 per experiment -->
+<br>
+<br>
+
+<img width="1390" alt="Schermafbeelding 2022-12-18 om 11 43 17" src="https://user-images.githubusercontent.com/112857444/208293919-d267b4aa-be97-4d66-9700-298b43ba8eaf.png">
+
+
 
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
